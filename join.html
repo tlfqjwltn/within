@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/join.js"></script>
+    <title>Within - login</title>    
+</head>
+<body>
+    <div id="container">
+        <header id="header_wrap">
+            <div id="header1">
+                <ul class="h_l">
+                    <li><a href="#" class="youtube"></a></li>
+                    <li><a href="#" class="insta"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="blog"></a></li>
+                </ul>
+                <a href="index.html" class="logo"></a>
+                <ul class="h_r">
+                    <li><a href="login.html" class="r5"></a></li>
+                    <li><a href="login.html" class="r4"></a></li>
+                    <li><a href="login.html" class="r3"></a></li>
+                    <li><a href="login.html" class="r2"></a></li>
+                    <li><a href="login.html" class="r1"><span class="font_blk">로그인</span></a></li>
+                </ul>
+            </div>
+            <div id="header2">
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#" class="all_menu"></a></li>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="within.html">Within</a></li>
+                        <li><a href="#">Wither</a></li>
+                        <li><a href="#">Witing</a></li>
+                        <li><a href="#">Wiggle</a></li>
+                        <li><a href="#">With Class</a></li>
+                        <li><a href="login.html">My Within</a></li>
+                    </ul>
+                    <div id="search_box"><input type="search" class="search_box"><a href="#" class="ico_search"></a></div>
+                </nav>
+            </div>
+        </header>
+        <section id="sec1">
+            <form id="sec1_wrap" onsubmit="return submitCheck(this);">
+                <fieldset>
+                    <h1 id="join_text">회원가입</h1>
+                    <label for="id" class="sec1_strong_txt">아이디</label>
+                    <input type="text" name="id" placeholder="아이디(5~12자리)" id="id_text_box" class="sec1_box" value="">
+                    <div class="check_txt_box"><span class="check_id"></span></div>
+                    <label class="sec1_strong_txt">비밀번호</label>
+                    <input type="password" name="pw1" placeholder="비밀번호(6~16자리)" id="pw_txt" class="sec1_box" value="">
+                    <input type="password" name="pw2" placeholder="비밀번호 확인" id="pwcheck_txt" class="sec1_box" value="">
+                    <div class="check_txt_box"><span class="check_pw"></span></div>
+                    <label for="mail" class="sec1_strong_txt">이메일</label>
+                    <input type="text" name="mail" placeholder="이메일 입력" id="mail_txt" class="sec1_box" value="">
+                    <div class="check_txt_box"><span class="check_mail"></span></div>
+                    
+                    <div id="check_box_1" class="check_box">
+                        <input type="checkbox" name="age" id="age" class="join_check">
+                        <label for="age"></label>
+                        <span class="check_txt">[필수] 만 14세 이상입니다.</span>
+                        <a href="#" class="check_more"></a>
+                        <div class="check_txt_box"><span class="check_off_text1"></span></div>
+                    </div>
+                    <div id="check_box2" class="check_box">
+                        <input type="checkbox" name="tac" id="tac" class="join_check">
+                        <label for="tac"></label>
+                        <span class="check_txt">[필수] 위딘 이용약관</span>
+                        <a href="#" class="check_more"></a>
+                        <div class="check_txt_box"><span class="check_off_text2"></span></div>
+                    </div>
+                    <div id="check_box3" class="check_box">
+                        <input type="checkbox" name="upi" id="upi" class="join_check">
+                        <label for="upi"></label>
+                        <span class="check_txt">[필수] 개인정보 수집 및 이용</span>
+                        <a href="#" class="check_more"></a>
+                        <div class="check_txt_box"><span class="check_off_text3"></span></div>
+                    </div>
+                    <div id="check_box4" class="check_box">
+                        <input type="checkbox" name="mac" id="mac" class="join_check">
+                        <label for="mac"></label>
+                        <span class="check_txt">[선택] 프로모션 및 마케팅 정보 수신</span>
+                        <a href="#" class="check_more"></a>
+                    </div>
+                    <div id="check_box_big" class="check_box">
+                        <input type="checkbox" name="allCheck" id="allCheck" class="join_check">
+                        <label for="allCheck"></label>
+                        <span class="check_txt_big">위딘 이용약관, 개인정보 수집 및 이용, 프로모션 및 마
+                            케팅 정보 수신(선택)에 모두 동의합니다.</span>
+                    </div>
+                    <input type="submit" name="submit" class="submit">
+                    <label for="submit" class="submit_label"></label>
+                </fieldset>
+            </form>
+        </section>
+        <div class="bar_box"></div>
+        <footer>
+            <div id="ft_1">
+                <ul class="footer_1">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">제휴제안</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">위딘 정책</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div id="ft_2">
+                <article>
+                    <span>&copy;WITHIN Corp. ALL RIGHTS RESERVED</span><br>
+                    <span class="ft2_small">데이터 무단 수집 거부</span>
+                </article>
+            </div>
+            <div id="ft_3">
+                <ul class="footer_3">
+                    <li><a href="#" class="e_pravacy"></a></li>
+                    <li><a href="#" class="wa"></a></li>
+                    <li><a href="#" class="kb"></a></li>
+                    <li><a href="#" class="trade"></a></li>
+                </ul>
+            </div>
+            <div id="ft_4">
+                <p>위딘 내 유저 사진, 프로필,  모임 정보  등 위딘 자체 생성 콘텐츠는 위딘 및 본인에게 저작권이 있습니다. 
+                이러한 콘텐츠는 출처를 밝히고 비상업적인 용도에서만 활용하실 수 있습니다.
+                커뮤니티  활동 내용 등 위딘 회원이 올린 이미지가 저작권에 위배될 경우 신고 하시면 검토 후 삭제하겠습니다.
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
